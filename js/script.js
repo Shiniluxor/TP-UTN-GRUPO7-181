@@ -35,34 +35,34 @@ $(document).ready(function() {
     // ...
   });
 
-const pagesPath = `${location.origin}/trabajo/pages/`;
-const indexPath = `${location.origin}/trabajo/`;
+const pagesPath = `${location.origin}/TP-UTN-GRUPO7-181/pages/`;
+const indexPath = `${location.origin}/TP-UTN-GRUPO7-181/`;
 
 
 const cabeceraHTML = document.getElementById("cabecera");
 cabeceraHTML.innerHTML = cabeceraHTML.innerHTML + `
-<nav class="navbar navbar-expand-lg bg-info rounded bg-opacity-50" aria-label="Eighth navbar example">
+<nav class="navbar navbar-expand-lg" aria-label="Eighth navbar example">
     <div class="container">
       <a class="navbar-brand" href="${indexPath}index.html">TP-INTEGRADOR</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarsExample07">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-           <li class="nav-item text-white">
-            <a class="nav-link" aria-current="page" href="${indexPath}index.html">Inicio</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+           <li class="nav-item">
+            <a class="navbar-brand" aria-current="page" href="${indexPath}index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="${pagesPath}equipo.html">Equipo</a>
+            <a class="navbar-brand" href="${pagesPath}equipo.html">Equipo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="${pagesPath}contacto.html">Contacto</a>
+            <a class="navbar-brand" href="${pagesPath}contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="${pagesPath}presentacion.html">Presentación</a>
+            <a class="navbar-brand" href="${pagesPath}presentacion.html">Presentación</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="${pagesPath}cotizacion.html">Cotización</a>
+            <a class="navbar-brand" href="${pagesPath}cotizacion.html">Cotización</a>
           </li>
         </ul>
         <form role="search">
@@ -75,21 +75,21 @@ cabeceraHTML.innerHTML = cabeceraHTML.innerHTML + `
 
 const pieHTML = document.getElementById("pie");
 pieHTML.innerHTML = pieHTML.innerHTML + `
-<footer class="py-5 d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-secondary bg-opacity-50">
+<footer class="py-5 d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-topy">
 <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 - Mi sitio web</p>
 <ul class="nav col-md-1 list-unstyled d-flex align-items-center">
-  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-github"></i></svg></a></li>
-  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></svg></a></li>
-  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></svg></a></li>
-  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></svg></a></li>
+  <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Shiniluxor/TP-UTN-GRUPO7-181"><i class="bi bi-github"></i></a></li>
+  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+  <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
 </ul>
 
 <ul class="nav col-md-4">
-  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-  <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+  <li class="nav-item"><a href="${indexPath}index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+  <li class="nav-item"><a href="${pagesPath}equipo.html" class="nav-link px-2 text-body-secondary">Equipo</a></li>
+  <li class="nav-item"><a href="${pagesPath}contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+  <li class="nav-item"><a href="${pagesPath}presentacion.html" class="nav-link px-2 text-body-secondary">Presentación</a></li>
+  <li class="nav-item"><a href="${pagesPath}cotizacion.html" class="nav-link px-2 text-body-secondary">Cotización</a></li>
 </ul>
 </footer>
 `;

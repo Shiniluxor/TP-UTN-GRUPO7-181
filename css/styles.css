@@ -12,14 +12,8 @@ h1, h2, h3, h4, h5, h6 {
   
   /* Estilo del encabezado */
 header {
-  background-color: #fff;
-  color: #fff;
+  background-color: #19A7CE;
   padding: 2vh 4vw;
-  }
-  
-header h1 {
-  font-size: 2em;
-  margin: 0;
   }
 
   
@@ -65,6 +59,10 @@ section button[type="submit"]:hover {
   background-color: #4E31AA;
   }
 
+footer{
+  background-color: #146C94;
+}
+
   /* Estilos específicos de cada página */
   
   /* Index */
@@ -99,32 +97,4 @@ section button[type="submit"]:hover {
   
 .index-btn:hover {
   background-color: #4E31AA;
-  }
-  
-  /* Contacto */
-#contacto section {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: 0 auto;
-  }
-  
-#contacto section label {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-  color: #444;
-  }
-  
-#contacto section input[type="text"],
-#contacto section input[type="email"],
-#contacto section textarea {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  border: none;
-  }
-  
-#contacto section textarea {
-  height: 150px;
   }
