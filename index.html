@@ -7,26 +7,178 @@
   <title>Mi sitio web</title>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
 
 <body>
-  <header>
-     <!-- Coloqué este div para no repetir el código del header en todas las secciones, 
-      ya que si se requiere modificar tendría que modificarlo en todos los archivos. 
-      Utilizo innerHTML en el JS para agregar el contenido del header al div correspondiente en cada archivo. -->
-    <div id="cabecera" class="cabecera"></div>
+  <header id="home" class="header">
+    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href=""><strong class="text-white">TP-INTEGRADOR</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#about">Presentación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#cotización">Cotización</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#equipo">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contacto</a>
+            </li>
+            <li class="nav-item ml-md-4">
+              <a class="nav-link btn btn-primary text-white" href="">Login</a>
+            </li>
+            <li class="nav-item ml-md-4">
+              <a class="nav-link btn btn-secondary text-white" href="">Sign-up</a>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
   </header>  
 
   <main  class="index-bg">
-    <section>
+    <section id="" class="inicio container">
       <h1>Bienvenidos a mi sitio web</h1>
       <p>Este es un sitio web de ejemplo para mostrar cómo puede lucir un sitio web sencillo pero moderno. ¡Espero que te guste!</p>
     </section>
+    <section id="about">
+      <div class="container">
+        <div class="about-wrepper">
+          <div class="after"><h1>About Us</h1></div>
+          <div class="content">
+            <h5 class="title mb-3">Lorem ipsum dolor sit.</h5>
+            <!-- row -->
+            <div class="row">
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda soluta nisi cumque nostrum porro repellat iusto neque quos asperiores, aliquam.</p>
+                    <p><b>Adipisicing elit. Modi similique  iusto voluptatibus sint.</b></p>                        
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dignissimos modi molestias voluptas possimus perferendis saepe soluta accusantium, obcaecati neque quas ducimus, alias labore nesciunt atque ab voluptatibus quis! Molestiae dicta reprehenderit, quod laborum voluptatem laboriosam! Sapiente vel, fugiat voluptates.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quis!</p>
+                </div>
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda soluta nisi cumque nostrum porro repellat iusto neque quos asperiores, aliquam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quis!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dignissimos modi molestias voluptas possimus perferendis saepe soluta accusantium, obcaecati neque quas ducimus, alias labore nesciunt atque ab voluptatibus quis! Molestiae dicta reprehenderit, quod laborum voluptatem laboriosam! Sapiente vel, fugiat voluptates.</p>
+                </div>
+            </div><!-- End of Row -->                   
+            <a href="javascript:void(0)">Read More...</a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cotización" class="cotizacion container">
+      <h2>Cotización</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+        <label for="servicio">Servicio:</label>
+        <select name="servicio" id="servicio" required>
+          <option value="">Seleccione un servicio</option>
+          <option value="Diseño web">Diseño web</option>
+          <option value="Desarrollo web">Desarrollo web</option>
+          <option value="Marketing digital">Marketing digital</option>
+          <option value="SEO">SEO</option>
+        </select>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="equipo" class="equipo container">
+      <div class="container">
+        <h3 class="mt-3 mb-5 pb-5">What our Client says</h3>
+        <!-- Row -->
+        <div class="row">
+          <div class="col-sm-10 col-md-4 m-auto">
+            <div class="testmonial-wrapper">
+              <img src="../imgs/equipo1.jpg" alt="Client Image">
+              <h6 class="title mb-3">Adell Smith</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptates voluptatem eum nisi cumque veniam est id reprehenderit atque rerum, cum sit perspiciatis, harum cupiditate nostrum quibusdam perferendis accusamus, illo.</p>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-4 m-auto">
+            <div class="testmonial-wrapper">
+              <img src="../imgs/equipo2.jpg" alt="Client Image">
+              <h6 class="title mb-3">John Doe</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptates voluptatem eum nisi cumque veniam est id reprehenderit atque rerum, cum sit perspiciatis, harum cupiditate nostrum quibusdam perferendis accusamus, illo.</p>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-4 m-auto">
+            <div class="testmonial-wrapper">
+              <img src="../imgs/equipo3.jpg" alt="Client Image">
+              <h6 class="title mb-3">Kyle Butler</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptates voluptatem eum nisi cumque veniam est id reprehenderit atque rerum, cum sit perspiciatis, harum cupiditate nostrum quibusdam perferendis accusamus, illo.</p>
+            </div>
+          </div>
+        </div><!-- end of Row -->           
+      </div><!-- End of Cotanier -->  
+    </section>
+
+    <section id="contact" class="contacto container">
+        <!-- container -->
+        <div class="container">
+          <h1>CONTACT US</h1>
+          <p class="mb-5">If you have some Questions or need Help! Please Contact Us! <br> 
+          We make Cool and Clean Design for your Business</p>
+          
+          <!-- Contact form -->
+          <form class="contact-form col-md-11 col-lg-9 mx-auto">
+              <div class="form-row">
+                  <div class="col form-group">
+                      <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="col form-group">
+                      <input type="email" class="form-control" placeholder="Email">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Your Message"></textarea>
+              </div>
+              <div class="form-group">
+                  <input type="submit" class="btn btn-primary btn-block" value="Send Message">
+              </div>
+          </form><!-- End of Contact form -->         
+      </div><!-- End of Container--> 
+    </section>
+
   </main>
 
 
-  <div id="pie" class="pie"></div>
+  <footer class="py-5 d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-topy">
+    <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 - Mi sitio web</p>
+    <ul class="nav col-md-1 list-unstyled d-flex align-items-center">
+      <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Shiniluxor/TP-UTN-GRUPO7-181"><i class="bi bi-github"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
+    </ul>
+    
+    <ul class="nav col-md-4">
+      <li class="nav-item"><a href="${indexPath}index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+      <li class="nav-item"><a href="${pagesPath}equipo.html" class="nav-link px-2 text-body-secondary">Equipo</a></li>
+      <li class="nav-item"><a href="${pagesPath}contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+      <li class="nav-item"><a href="${pagesPath}presentacion.html" class="nav-link px-2 text-body-secondary">Presentación</a></li>
+      <li class="nav-item"><a href="${pagesPath}cotizacion.html" class="nav-link px-2 text-body-secondary">Cotización</a></li>
+    </ul>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
